@@ -265,7 +265,7 @@ pnpm test
 
 <br />
 
-**Maintained by [BIDI-Forge](https://github.com/BIDI-Forge) **
+**Maintained by [BIDI-Forge](https://github.com/BIDI-Forge)**
 
 </div>
 
