@@ -260,8 +260,8 @@ pnpm test
 
 <div align="center">
 
-[![Amir Mohamad Kazemi @amirmkazemi](https://img.shields.io/static/v1?style=for-the-badge&logo=github&logoColor=white&label=Amir%20Mohamad%20Kazemi%20%40amirmkazemi&color=6366f1)](https://github.com/amirmkazemi)
-[![Azim Hatami @azimhatami](https://img.shields.io/static/v1?style=for-the-badge&logo=github&logoColor=white&label=Azim%20Hatami%20%40azimhatami&color=0d9488)](https://github.com/azimhatami)
+[![Amir Mohamad Kazemi](https://img.shields.io/badge/Amir%20Mohamad%20Kazemi-6366f1?style=for-the-badge&logo=github&logoColor=white)](https://github.com/amirmkazemi)
+[![Azim Hatami](https://img.shields.io/badge/Azim%20Hatami-0d9488?style=for-the-badge&logo=github&logoColor=white)](https://github.com/azimhatami)
 
 <br />
 
