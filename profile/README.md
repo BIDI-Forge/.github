@@ -1,10 +1,12 @@
 <div align="center">
 
 <!-- Animated gradient banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d9488,50:0891b2,100:6366f1&height=220&section=header&text=BIDI%20%E2%80%A2%20Forge&fontSize=52&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Intelligent%20bidirectional%20text%20for%20RTL%20%2B%20LTR%20worlds&descAlignY=58&descAlign=50" width="100%" alt="BIDI · Forge banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d9488,50:0891b2,100:6366f1&height=200&section=header&text=BIDI%20%E2%80%A2%20Forge&fontSize=52&fontColor=ffffff&animation=twinkling&fontAlignY=40&desc=Intelligent%20bidirectional%20text%20for%20RTL%20%2B%20LTR%20worlds&descAlignY=62&descAlign=50" width="100%" alt="BIDI · Forge banner" />
 
-<!-- Pulsing logo ring (inline SVG) -->
-<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<br />
+
+<!-- Logo ring -->
+<svg width="96" height="96" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <defs>
     <linearGradient id="bf-ring" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#14b8a6">
@@ -14,28 +16,29 @@
         <animate attributeName="stop-color" values="#6366f1;#14b8a6;#6366f1" dur="4s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
-    <filter id="bf-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
-  <rect x="18" y="18" width="84" height="84" rx="22" fill="#0f172a" stroke="url(#bf-ring)" stroke-width="3" filter="url(#bf-glow)">
-    <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="12s" repeatCount="indefinite"/>
+  <rect x="18" y="18" width="84" height="84" rx="22" fill="#0f172a" stroke="url(#bf-ring)" stroke-width="3">
+    <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="14s" repeatCount="indefinite"/>
   </rect>
-  <text x="60" y="72" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="32" font-weight="700" fill="url(#bf-ring)">BF</text>
+  <text x="60" y="72" text-anchor="middle" font-family="ui-monospace,monospace" font-size="32" font-weight="700" fill="url(#bf-ring)">BF</text>
 </svg>
+
+<br /><br />
+
+<!-- Single-line typing — avoids multiline overlap on GitHub -->
+<img
+  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=14B8A6&center=true&vCenter=true&width=640&height=36&lines=Fix+mixed+Persian+%E2%80%A2+Arabic+%E2%80%A2+English+in+AI+chats"
+  alt="Fix mixed Persian, Arabic and English in AI chats"
+/>
 
 <br />
 
-<!-- Typing animation -->
-<a href="https://git.io/typing-svg">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=14B8A6&center=true&vCenter=true&multiline=true&width=620&lines=Fix+mixed+Persian+%E2%80%A2+Arabic+%E2%80%A2+English;Claude-first+AI+chat+BiDi;Unicode+markers+%E2%80%A2+Zero+server+%E2%80%A2+MIT+open+source"
-    alt="Typing animation"
-  />
-</a>
+<img
+  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=3200&pause=1200&color=94A3B8&center=true&vCenter=true&width=640&height=28&lines=Claude-first+%E2%80%A2+Unicode+BiDi+%E2%80%A2+Local+only+%E2%80%A2+MIT+open+source"
+  alt="Claude-first, Unicode BiDi, local only, MIT"
+/>
 
-<br /><br />
+<br /><br /><br />
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-14b8a6?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -59,8 +62,8 @@ When **RTL** scripts (Persian, Arabic) meet **LTR** text (English, URLs, code) i
 **BIDI · Forge** inserts invisible Unicode BiDi markers so mixed text reads naturally:
 
 ```diff
-- ‎Input‎:  ‏سلام‏ ‎hello‎ ‏دنیا‏
-+ ‎Output‎: ‏سلام‏ ‎hello‎ ‏دنیا‏
+- Input:  سلام hello دنیا
++ Output: سلام ‎hello‎ دنیا
 ```
 
 > Local-only · No telemetry · Works in the browser & editor · Built for real bilingual workflows
@@ -110,16 +113,79 @@ When **RTL** scripts (Persian, Arabic) meet **LTR** text (English, URLs, code) i
 
 <div align="center">
 
-| Platform | Status | Approach |
-|:---:|:---:|:---|
-| **Claude.ai** | 🟢 Primary | ProseMirror composer + `standard-markdown` replies |
-| **ChatGPT** | 🟢 Active | Composer + assistant bubbles |
-| **Gemini** | 🟢 Active | CSS-only Quill composer |
-| **Grok** | 🟢 Active | CSS-only ProseMirror on grok.com & X |
-| **Qwen** | 🟢 Active | chat.qwen.ai presets |
-| **Copilot** | 🟡 Coming soon | — |
-| **Perplexity** | 🟡 Coming soon | — |
-| **DeepSeek** | 🟡 Coming soon | — |
+<!-- Active platforms -->
+<table>
+<tr>
+<td align="center" width="20%">
+<br/>
+<img src="https://img.shields.io/badge/Claude.ai-Primary%20Focus-D97757?style=for-the-badge&labelColor=1a1a2e" alt="Claude"/>
+<br/><br/>
+<sub><b>🟢 Live</b><br/>ProseMirror composer<br/>+ streaming replies</sub>
+<br/><br/>
+</td>
+<td align="center" width="20%">
+<br/>
+<img src="https://img.shields.io/badge/ChatGPT-Active-10A37F?style=for-the-badge&labelColor=1a1a2e" alt="ChatGPT"/>
+<br/><br/>
+<sub><b>🟢 Live</b><br/>Composer +<br/>assistant bubbles</sub>
+<br/><br/>
+</td>
+<td align="center" width="20%">
+<br/>
+<img src="https://img.shields.io/badge/Gemini-Active-4285F4?style=for-the-badge&labelColor=1a1a2e" alt="Gemini"/>
+<br/><br/>
+<sub><b>🟢 Live</b><br/>CSS-only Quill<br/>composer path</sub>
+<br/><br/>
+</td>
+<td align="center" width="20%">
+<br/>
+<img src="https://img.shields.io/badge/Grok-Active-1DA1F2?style=for-the-badge&labelColor=1a1a2e" alt="Grok"/>
+<br/><br/>
+<sub><b>🟢 Live</b><br/>grok.com &amp; X<br/>ProseMirror CSS</sub>
+<br/><br/>
+</td>
+<td align="center" width="20%">
+<br/>
+<img src="https://img.shields.io/badge/Qwen-Active-615EFF?style=for-the-badge&labelColor=1a1a2e" alt="Qwen"/>
+<br/><br/>
+<sub><b>🟢 Live</b><br/>chat.qwen.ai<br/>presets</sub>
+<br/><br/>
+</td>
+</tr>
+</table>
+
+<br />
+
+<!-- Coming soon -->
+<table>
+<tr>
+<td align="center" width="33%">
+<br/>
+<img src="https://img.shields.io/badge/Copilot-Coming%20Soon-0078D4?style=for-the-badge&labelColor=1a1a2e&logo=microsoftcopilot&logoColor=white" alt="Copilot"/>
+<br/><br/>
+<sub><b>🟡 Planned</b><br/>Microsoft Copilot<br/>composer &amp; replies</sub>
+<br/><br/>
+</td>
+<td align="center" width="33%">
+<br/>
+<img src="https://img.shields.io/badge/Perplexity-Coming%20Soon-20B8CD?style=for-the-badge&labelColor=1a1a2e" alt="Perplexity"/>
+<br/><br/>
+<sub><b>🟡 Planned</b><br/>Search-style<br/>answers &amp; follow-ups</sub>
+<br/><br/>
+</td>
+<td align="center" width="33%">
+<br/>
+<img src="https://img.shields.io/badge/DeepSeek-Coming%20Soon-4D6BFE?style=for-the-badge&labelColor=1a1a2e" alt="DeepSeek"/>
+<br/><br/>
+<sub><b>🟡 Planned</b><br/>Chat composer<br/>+ message surfaces</sub>
+<br/><br/>
+</td>
+</tr>
+</table>
+
+<br />
+
+<img src="https://img.shields.io/badge/Legend-🟢%20Live%20%20%7C%20%20🟡%20Coming%20Soon-334155?style=flat-square&labelColor=0f172a" alt="Legend"/>
 
 </div>
 
@@ -207,7 +273,6 @@ pnpm test
 
 <div align="center">
 
-<!-- Animated wave footer -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366f1,50:0891b2,100:0d9488&height=120&section=footer&fontSize=14&fontColor=ffffff&animation=twinkling&text=Forge%20clarity%20in%20every%20mixed%20sentence." width="100%" alt="Footer wave" />
 
 <br />
