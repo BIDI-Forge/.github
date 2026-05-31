@@ -267,7 +267,7 @@ pnpm test
 
 <br />
 
-**Maintained by [BIDI-Forge](https://github.com/BIDI-Forge) · [@GSMGPT](https://github.com/GSMGPT)**
+**Maintained by [BIDI-Forge](https://github.com/BIDI-Forge)**
 
 </div>
 
