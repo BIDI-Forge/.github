@@ -287,7 +287,7 @@ BIDI · Forge is free and open source. If it helps your AI chats or mixed RTL/LT
 
 <br />
 
-**Maintained by [BIDI-Forge](https://github.com/BIDI-Forge) · [@GSMGPT](https://github.com/GSMGPT)**
+**Maintained by [BIDI-Forge](https://github.com/BIDI-Forge)**
 
 </div>
 
